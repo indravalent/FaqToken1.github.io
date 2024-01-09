@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <title>Signup</title>
+
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">TOKEN</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">
+              <i class='bx bx-user' ></i>
+              <span class="links_name">Faq Token</span>
+            </a>
+            <span class="tooltip">Token</span>
+          </li>
+          <li>
+            <a href="account.html">
+              <i class='bx bx-user'></i>
+              <span class="links_name">cara kerja<br>Token listrik</span>
+            </a>
+             <span class="tooltip">listrik</span>
+          </li>
+          <li>
+           <a href="signup.html">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">Cara kerja<br>Token Pulsa</span>
+           </a>
+           <span class="tooltip">Pulsa</span>
+         </li>
+        </ul>
+    </div>
+
+    <section class="home-section">
+        <div class="acumalaka">
+            <h1 class="acumalaka-title">TOKEN</h1>
+            <p class="acumalaka-desc">Frequently Ask Question</p>
+            <div class="search">
+                <input type="text" name="" id="search_item" placeholder="search...."
+                onkeyup="search()">
+                <button>Search</button>
+            </div>
+        </div>    
+
+    <div class="faq">
+        <div class="faq-name">
+            <h1 class="faq-header">Have Questions<br>Token Pulsa</h1>
+            
+        </div>
+        <div class="faq-box" id="faq-box">
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-1">
+                <label class="faq-title" for="faq-trigger-1">Pembelian Token Pulsa?</label>
+                <div class="faq-detail">
+                    <p>
+                        Pengguna membeli token pulsa dari penyedia layanan seluler atau agen penjualan yang ditunjuk. Token pulsa ini berupa kode numerik yang dapat dimasukkan ke ponsel.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-2">
+                <label class="faq-title" for="faq-trigger-2">Mengirim Token Pulsa?</label>
+                <div class="faq-detail">
+                    <p>
+                        Pengguna memasukkan kode token pulsa yang diterima ke ponsel mereka. Ini dapat dilakukan melalui menu ponsel yang disediakan oleh operator seluler atau melalui aplikasi pengelola pulsa.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-3">
+                <label class="faq-title" for="faq-trigger-3">Verifikasi Token?</label>
+                <div class="faq-detail">
+                    <p>
+                        Setelah token dimasukkan, operator seluler memverifikasi keabsahan kode token tersebut. Proses ini melibatkan pengecekan kode pada server operator seluler.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-4">
+                <label class="faq-title" for="faq-trigger-4">Penambahan Nilai Pulsa?</label>
+                <div class="faq-detail">
+                    <p>
+                        Jika token pulsa dinyatakan valid, nilai yang terkandung dalam token akan ditambahkan ke saldo pulsa pengguna. Saldo pulsa ini dapat digunakan untuk melakukan panggilan, mengirim pesan teks, atau menggunakan layanan seluler lainnya.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-5">
+                <label class="faq-title" for="faq-trigger-5">Penggunaan Pulsa?</label>
+                <div class="faq-detail">
+                    <p>
+                        Pengguna dapat menggunakan saldo pulsa mereka untuk melakukan berbagai layanan seluler, seperti melakukan panggilan, mengirim pesan teks, mengakses internet, dan lainnya.
+                    </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-6">
+                <label class="faq-title" for="faq-trigger-6">Pemberitahuan Saldo Rendah?</label>
+                <div class="faq-detail">
+                    <p>Operator seluler biasanya memberikan pemberitahuan kepada pengguna ketika saldo pulsa mereka mendekati batas rendah atau habis. Pemberitahuan ini dapat berupa pesan teks atau pemberitahuan melalui aplikasi seluler.</p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-7">
+                <label class="faq-title" for="faq-trigger-7">Isi Ulang Pulsa?</label>
+                <div class="faq-detail">
+                   <p>
+                    Jika saldo pulsa mendekati habis atau sudah habis, pengguna harus membeli token pulsa baru untuk menambah kredit ke saldo pulsa mereka. Ini dapat dilakukan dengan cara yang sama seperti langkah pertama.
+                   </p>
+                </div>
+            </div>
+            <div class="faq-wrapper">
+                <input type="checkbox" class="faq-trigger" id="faq-trigger-8">
+                <label class="faq-title" for="faq-trigger-8">video cara kerja token pulsa</label>
+                <div class="faq-detail">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/KGY-yEQ3LK8?si=2Dj8X3tNjv0EnYWK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+		<div class="main-content">
+			<div class="right box">
+				<h2>Contact Us</h2>
+                <div class="content">
+                    <div class="text">Name</div>
+                        <input type="text" id="name" placeholder="enter your name"> <br>
+                    <div class="text">email</div>
+                        <input type="email" id="email" placeholder="enter your email"> <br>
+                    <div class="text">message</div>    
+                    <textarea id="message" rows="3"></textarea> <br>
+                    <button class="btn btn-primary"onclick="sendMail()">submit</button>
+                </div>
+             </div>
+        </div>        
+    </footer>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init("McXZgfLFJqdnpVWSB");
+   })();
+    </script>             
+            
+    <script src="app.js"></script>
+</body>
+</html>
